@@ -1,0 +1,44 @@
+ .screen {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.screen #pendiente {
+  min-height: 20px;
+  display: block;
+  text-align: right;
+  color: #a9a9a9;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.screen #pantalla {
+  min-height: 70px;
+  width: 100%;
+  font-size: 70px;
+  font-weight: 500;
+  text-align: right;
+  border: none;
+  background-color: transparent;
+  display: block;
+  margin: auto;
+  color: #313131;
+}
+
+.screen #pantalla:focus,
+.screen #pantalla:active {
+  outline: none;
+}
+
+body.dark .screen {
+  border-bottom-color: #3c3c3c;
+}
+
+body.dark .screen #pendiente {
+  color: #7c7c7c;
+}
+
+body.dark .screen #pantalla{
+  color: #fbfbfb;
+}

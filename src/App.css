@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  padding: 130px 0 0 0;
+  margin: 0;
+  background: #eb6262;
+}
+
+#calculadora {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 50px 50px 70px;
+  background: #fbfbfb;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px 5px;
+}
+
+#change-theme {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+#change-theme svg {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+body.dark {
+  background: darkgray;
+}
+
+body.dark #change-theme svg.change-dark {
+  display: none;
+}
+
+body:not(.dark) #change-theme svg.change-clear {
+  display: none;
+}
+
+body.dark #calculadora {
+  background: #313131;
+}

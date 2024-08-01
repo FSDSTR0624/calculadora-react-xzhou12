@@ -1,0 +1,57 @@
+.boton,
+.operador,
+.resultado {
+  width: 100%;
+  height: 70px;
+  font-size: 35px;
+  color: #959595;
+  border: none;
+  cursor: pointer;
+  display: block;
+  background-color: transparent;
+  border-radius: 100%;
+}
+
+.operador.first-row,
+.operador {
+  background-color: #f1f1f1;
+  color: #4a4a4a;
+}
+
+.operador:not(.first-row) {
+  color: #eb6262;
+}
+
+.resultado {
+  grid-row: 4/6;
+  grid-column: 4;
+  height: 100%;
+  color: #f8e8e8;
+  background-color: #eb6262;
+  border-radius: 50px;
+}
+
+body.dark .boton,
+body.dark .operador,
+body.dark .resultado  {
+  color: #adadad;
+}
+
+body.dark .operador.first-row,
+body.dark .operador {
+  background-color: #414141;
+  color: #cccdcc;
+}
+
+body.dark .operador:not(.first-row) {
+  color: #eb6262;
+}
+
+body.dark .resultado {
+  grid-row: 4/6;
+  grid-column: 4;
+  height: 100%;
+  color: #f8e8e8;
+  background-color: #eb6262;
+  border-radius: 50px;
+}
